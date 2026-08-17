@@ -1,0 +1,1998 @@
+/* =========================================================
+   DAYI'S BEAUTY SPA
+   ESTILOS PRINCIPALES
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  color: #163d31;
+  background: #f4f3ed;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrap {
+  width: min(1180px, 92%);
+  margin: auto;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.topbar {
+  background: #075239;
+  color: #f5f4e9;
+  font-size: 10px;
+}
+
+.topin {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 7px 0;
+}
+
+.socialmini {
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #fbfaf4dd;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #d8d9ce;
+}
+
+.navin {
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand img {
+  width: 115px;
+  height: auto;
+  object-fit: contain;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.links a {
+  color: #173e31;
+  text-decoration: none;
+}
+
+.links .cta {
+  background: #075239;
+  color: white;
+  padding: 13px 19px;
+  border-radius: 25px;
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 25px;
+  color: #075239;
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.heroImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      #003d2bd9 0%,
+      #00523a9b 43%,
+      #001d1433 75%
+    );
+}
+
+.heroContent {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroCopy {
+  max-width: 610px;
+  padding: 30px 0;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font: 600 76px/0.82 "Cormorant Garamond", serif;
+  margin: 18px 0;
+}
+
+.hero h1 em,
+.sectionHead h2 em {
+  font-family: Parisienne, cursive;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 16px;
+  max-width: 490px;
+}
+
+.goldBtn,
+.smallBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  background: #e8c874;
+  color: #173e31;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+.heroBadge {
+  border-radius: 50%;
+  background: #075239d9;
+  padding: 50px 32px;
+  text-align: center;
+  font: 24px "Cormorant Garamond", serif;
+}
+
+
+/* =========================================================
+   BENEFICIOS
+========================================================= */
+
+.benefits {
+  background: white;
+  border-radius: 0 0 30px 30px;
+}
+
+.benefitsin {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 17px 0;
+}
+
+.benefitsin div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.benefitsin b {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f1dda0;
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+.section {
+  padding: 70px 0;
+}
+
+.sectionHead {
+  text-align: center;
+}
+
+.sectionHead .leaf {
+  display: block;
+  color: #0b5a41;
+  font-size: 30px;
+}
+
+.eyebrow.dark {
+  color: #0b5a41;
+}
+
+.sectionHead h2 {
+  font: 600 42px/1 "Cormorant Garamond", serif;
+  margin: 8px 0 25px;
+}
+
+
+/* =========================================================
+   CATEGORÍAS
+========================================================= */
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.tab {
+  border: 1px solid #c9cec6;
+  background: #fff;
+  border-radius: 25px;
+  padding: 10px 18px;
+  color: #27473d;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tab:hover {
+  border-color: #075239;
+  color: #075239;
+  transform: translateY(-1px);
+}
+
+.tab.active {
+  background: #075239;
+  color: white;
+  border-color: #075239;
+}
+
+
+/* =========================================================
+   💚 CARTA DE PRECIOS
+========================================================= */
+
+/*
+   IMPORTANTE:
+   Ya no usamos tarjetas con imágenes.
+   Toda la sección funciona como una carta de precios.
+*/
+
+.serviceGrid {
+  display: block;
+  width: 100%;
+}
+
+
+/* Categoría */
+
+.priceSection {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.priceSection:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Encabezado de categoría */
+
+.priceSectionHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 0 4px 14px;
+
+  border-bottom: 2px solid #b8dcd0;
+
+  margin-bottom: 0;
+}
+
+.priceSectionHeader h2 {
+  margin: 0;
+
+  color: #075239;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.priceSectionHeader p {
+  margin: 3px 0 0;
+
+  color: #7b8781;
+
+  font-size: 10px;
+}
+
+.priceSectionHeader > span {
+  color: #7b8781;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* Tabla */
+
+.priceTable {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e5dc;
+
+  border-top: none;
+
+  border-radius: 0 0 16px 16px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 24px rgba(22, 61, 49, 0.06);
+}
+
+
+/* Encabezado */
+
+.priceTableHeader {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    110px
+    140px
+    110px;
+
+  align-items: center;
+
+  padding: 13px 20px;
+
+  background: #edf7f2;
+
+  color: #4b655c;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.8px;
+}
+
+
+/* Filas */
+
+.priceRow {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    110px
+    140px
+    110px;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 18px 20px;
+
+  border-bottom: 1px solid #edf0eb;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.priceRow:last-child {
+  border-bottom: none;
+}
+
+.priceRow:hover {
+  background: #fbfdfb;
+}
+
+
+/* Información del servicio */
+
+.serviceInfo {
+  min-width: 0;
+}
+
+.serviceInfo h3 {
+  margin: 0 0 5px;
+
+  color: #24483d;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 1.05;
+}
+
+.serviceInfo p {
+  margin: 0;
+
+  max-width: 650px;
+
+  color: #78857f;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* Duración */
+
+.serviceDuration {
+  color: #687771;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.durationIcon {
+  color: #0b6a4c;
+
+  margin-right: 4px;
+
+  font-size: 13px;
+}
+
+
+/* Precio */
+
+.servicePrice {
+  color: #075239;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* Botón */
+
+.serviceAction {
+  text-align: right;
+}
+
+.reserveCard {
+  width: auto;
+
+  min-width: 100px;
+
+  border: 0;
+
+  background: #075239;
+
+  color: white;
+
+  border-radius: 22px;
+
+  padding: 9px 16px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.reserveCard:hover {
+  background: #0a6a4d;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 14px rgba(7, 82, 57, 0.2);
+}
+
+
+/* Sin servicios */
+
+.no-services {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 45px 20px;
+
+  text-align: center;
+
+  box-shadow:
+    0 8px 24px rgba(22, 61, 49, 0.06);
+}
+
+.no-services-icon {
+  font-size: 30px;
+
+  margin-bottom: 10px;
+}
+
+.no-services h3 {
+  margin: 0 0 5px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 24px;
+}
+
+.no-services p {
+  margin: 0;
+
+  color: #7a8781;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   EXPERIENCIAS
+========================================================= */
+
+.experiences {
+  padding-top: 0;
+}
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.promo {
+  height: 180px;
+
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  color: white;
+}
+
+.promo:after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #063d2fe8,
+      #063d2f33
+    );
+}
+
+.promo1 {
+  background-image:
+    url("https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1000&q=80");
+}
+
+.promo2 {
+  background-image:
+    url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=80");
+}
+
+.promo3 {
+  background-image:
+    url("https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=1000&q=80");
+}
+
+.promo > div {
+  position: relative;
+
+  z-index: 1;
+
+  padding: 25px;
+}
+
+.promo span {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.promo h3 {
+  font: 700 31px/0.85 "Cormorant Garamond", serif;
+
+  margin: 9px 0;
+}
+
+.promo p {
+  font-size: 10px;
+}
+
+.smallBtn {
+  padding: 9px 17px;
+  margin-top: 4px;
+}
+
+.smallBtn.red {
+  background: #e35d63;
+  color: white;
+}
+
+
+/* =========================================================
+   RESERVAS
+========================================================= */
+
+.bookingSection {
+  background: #075239;
+  color: white;
+
+  padding: 55px 0;
+}
+
+.bookingTitle {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+}
+
+.bookingTitle > span {
+  font-size: 28px;
+}
+
+.bookingTitle h2 {
+  font: 600 38px "Cormorant Garamond", serif;
+
+  margin: 0;
+}
+
+.bookingTitle p {
+  margin: 0;
+
+  font-size: 11px;
+
+  color: #c9e0d8;
+}
+
+.bookingBox {
+  background: #f7f8f3;
+
+  color: #173e31;
+
+  border-radius: 22px;
+
+  display: grid;
+
+  grid-template-columns: 145px 1fr;
+
+  overflow: hidden;
+}
+
+.steps {
+  background: #0a5a42;
+
+  padding: 24px 16px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+.step {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #b9d4ca;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.step b {
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid #aac7bd;
+
+  border-radius: 50%;
+
+  display: grid;
+
+  place-items: center;
+}
+
+.step.active {
+  color: white;
+}
+
+.step.active b {
+  background: #e6c46f;
+
+  color: #173e31;
+
+  border-color: #e6c46f;
+}
+
+.bookingForm {
+  padding: 25px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 20px;
+}
+
+.bookingCol {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.bookingForm label {
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+.bookingForm label span {
+  font-weight: 400;
+
+  color: #718078;
+}
+
+.bookingForm input,
+.bookingForm select,
+.bookingForm textarea {
+  margin-top: 6px;
+
+  width: 100%;
+
+  border: 1px solid #d9ded7;
+
+  border-radius: 12px;
+
+  padding: 12px;
+
+  background: white;
+
+  color: #173e31;
+
+  font: 12px Inter;
+
+  outline: none;
+}
+
+.bookingForm input:focus,
+.bookingForm select:focus,
+.bookingForm textarea:focus {
+  border-color: #08714f;
+}
+
+.scheduleNote {
+  background: #e8f5e9;
+
+  border-radius: 12px;
+
+  padding: 12px;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+.scheduleMini {
+  font-size: 9px;
+
+  color: #6d7b75;
+
+  line-height: 1.5;
+}
+
+.waBtn {
+  border: 0;
+
+  background: #075239;
+
+  color: white;
+
+  border-radius: 24px;
+
+  padding: 14px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.bookingForm small {
+  font-size: 8px;
+
+  color: #728079;
+}
+
+.formError {
+  display: none;
+
+  background: #fff0ea;
+
+  color: #9c4b2d;
+
+  border-radius: 10px;
+
+  padding: 9px;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   CONTACTO
+========================================================= */
+
+.contact {
+  background: white;
+
+  padding: 45px 0;
+}
+
+.contactGrid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 40px;
+}
+
+.contact h3 {
+  font: 600 30px "Cormorant Garamond", serif;
+
+  margin: 8px 0 15px;
+}
+
+.contact p {
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+.mapBtn {
+  display: inline-block;
+
+  background: #075239;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 11px 18px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+}
+
+.waText {
+  color: #075239;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   GALERÍA
+========================================================= */
+
+.gallery {
+  background: #f4f3ed;
+}
+
+.galleryGrid {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 10px;
+}
+
+.galleryGrid img {
+  height: 150px;
+
+  width: 100%;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+}
+
+
+/* =========================================================
+   TESTIMONIOS
+========================================================= */
+
+.testimonialGrid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.testimonialGrid article {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  box-shadow:
+    0 8px 22px #163d3112;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  background: #d9eadf;
+
+  display: grid;
+
+  place-items: center;
+
+  font-weight: 800;
+
+  color: #075239;
+
+  float: left;
+
+  margin-right: 10px;
+}
+
+.testimonialGrid span {
+  display: block;
+
+  color: #d69d22;
+
+  margin: 4px 0;
+}
+
+.testimonialGrid p {
+  font-size: 10px;
+
+  line-height: 1.6;
+
+  clear: both;
+
+  padding-top: 12px;
+}
+
+
+/* =========================================================
+   VIDEO
+========================================================= */
+
+.videoSection {
+  background:
+    linear-gradient(
+      135deg,
+      #f5f4ec,
+      #eef4ef
+    );
+}
+
+.videoGrid {
+  display: grid;
+
+  grid-template-columns: .8fr 1.2fr;
+
+  gap: 42px;
+
+  align-items: center;
+}
+
+.videoGrid h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  line-height: .95;
+
+  margin: 10px 0 18px;
+
+  color: #123d31;
+}
+
+.videoGrid p {
+  max-width: 520px;
+
+  color: #5d6d67;
+
+  line-height: 1.7;
+
+  margin-bottom: 24px;
+}
+
+.videoCard {
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 20px 50px #0b3d2a22;
+
+  background: #0b3d2a;
+}
+
+.videoCard video {
+  display: block;
+
+  width: 100%;
+
+  max-height: 560px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+  background: #063d2d;
+
+  color: white;
+
+  padding: 35px 0 18px;
+}
+
+.foot {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+.foot img {
+  width: 170px;
+
+  background: white;
+
+  border-radius: 10px;
+}
+
+.foot b {
+  font: 20px "Cormorant Garamond", serif;
+}
+
+.copyright {
+  text-align: center;
+
+  font-size: 8px;
+
+  color: #a9c9be;
+
+  margin-top: 28px;
+}
+
+
+/* =========================================================
+   WHATSAPP FLOTANTE
+========================================================= */
+
+.floatingWa {
+  position: fixed;
+
+  right: 20px;
+
+  bottom: 20px;
+
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background: #18c56b;
+
+  color: white;
+
+  display: grid;
+
+  place-items: center;
+
+  text-decoration: none;
+
+  font-size: 28px;
+
+  box-shadow:
+    0 8px 30px #0003;
+
+  z-index: 30;
+}
+
+
+/* =========================================================
+   📱 TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .links {
+    gap: 13px;
+  }
+
+  .priceTableHeader,
+  .priceRow {
+    grid-template-columns:
+      minmax(0, 1fr)
+      90px
+      120px
+      100px;
+  }
+
+  .bookingBox {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    flex-direction: row;
+
+    overflow-x: auto;
+  }
+
+  .bookingForm {
+    grid-template-columns: 1fr;
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   📱 CELULAR
+========================================================= */
+
+@media (max-width: 680px) {
+
+  .topin {
+    font-size: 8px;
+  }
+
+  .socialmini {
+    display: none;
+  }
+
+  .navin {
+    height: 65px;
+  }
+
+  .brand img {
+    width: 135px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .links {
+    display: none;
+
+    position: absolute;
+
+    top: 65px;
+
+    left: 0;
+    right: 0;
+
+    background: white;
+
+    padding: 18px;
+
+    flex-direction: column;
+
+    box-shadow:
+      0 15px 25px #0002;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+
+  /* Hero */
+
+  .hero {
+    height: 540px;
+  }
+
+  .heroContent {
+    align-items: flex-end;
+
+    padding-bottom: 55px;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+  }
+
+  .heroBadge {
+    display: none;
+  }
+
+
+  /* Beneficios */
+
+  .benefitsin {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* Secciones */
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .sectionHead h2 {
+    font-size: 34px;
+  }
+
+
+  /* Categorías */
+
+  .tabs {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    flex-wrap: nowrap;
+
+    padding-bottom: 5px;
+
+    scrollbar-width: none;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab {
+    flex: 0 0 auto;
+  }
+
+
+  /* ========================================
+     CARTA EN CELULAR
+  ======================================== */
+
+  .priceSection {
+    margin-bottom: 35px;
+  }
+
+  .priceSectionHeader {
+    align-items: center;
+  }
+
+  .priceSectionHeader h2 {
+    font-size: 25px;
+  }
+
+  .priceTableHeader {
+    display: none;
+  }
+
+  .priceRow {
+    display: block;
+
+    padding: 20px 17px;
+  }
+
+  .serviceInfo h3 {
+    font-size: 21px;
+  }
+
+  .serviceInfo p {
+    font-size: 10px;
+
+    margin-bottom: 14px;
+  }
+
+  .serviceDuration {
+    display: inline-block;
+
+    margin-right: 12px;
+  }
+
+  .servicePrice {
+    display: inline-block;
+
+    font-size: 16px;
+  }
+
+  .serviceAction {
+    text-align: left;
+
+    margin-top: 15px;
+  }
+
+  .reserveCard {
+    width: 100%;
+
+    padding: 11px;
+  }
+
+
+  /* Experiencias */
+
+  .serviceGrid,
+  .experienceGrid,
+  .contactGrid,
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Galería */
+
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galleryGrid img {
+    height: 140px;
+  }
+
+
+  /* Reservas */
+
+  .bookingTitle h2 {
+    font-size: 32px;
+  }
+
+
+  /* Footer */
+
+  .foot {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .foot img {
+    margin: auto;
+  }
+
+  .heroCopy {
+    padding-bottom: 0;
+  }
+
+
+  /* Video */
+
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .videoCard video {
+    max-height: none;
+  }
+
+}
+
+/* ========================================
+   INFORMACIÓN DEL SERVICIO
+======================================== */
+
+.bookingInfo{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.bookingInfo > div{
+  background:#eef5ef;
+  border:1px solid #dce8df;
+  border-radius:13px;
+  padding:12px;
+}
+
+.bookingInfo span{
+  display:block;
+  font-size:9px;
+  color:#718078;
+  margin-bottom:5px;
+}
+
+.bookingInfo strong{
+  display:block;
+  font-size:15px;
+  color:#075239;
+}
+
+
+/* ========================================
+   MODALIDAD
+======================================== */
+
+.bookingMode{
+  background:#eef5ef;
+  border:1px solid #dce8df;
+  border-radius:14px;
+  padding:13px;
+}
+
+.modeTitle{
+  display:block;
+  font-size:10px;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+.modeOption{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  background:white;
+  border:1px solid #dfe5df;
+  border-radius:10px;
+  padding:10px;
+  margin-top:7px;
+  cursor:pointer;
+}
+
+.modeOption:hover{
+  border-color:#0b714f;
+}
+
+.modeOption input{
+  width:auto !important;
+  margin:0 !important;
+}
+
+.modeOption span{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.modeOption strong{
+  font-size:10px;
+}
+
+.modeOption small{
+  font-size:8px;
+  color:#718078;
+}
+
+
+/* ========================================
+   DOMICILIO
+======================================== */
+
+.domicilioBox{
+  background:#fff8e8;
+  border:1px solid #ead8a5;
+  border-radius:13px;
+  padding:12px;
+}
+
+.domicilioBox label{
+  color:#173e31;
+}
+
+
+/* ========================================
+   PRECIO EN SERVICIOS
+======================================== */
+
+.serviceBody .price{
+  color:#075239;
+  font-weight:800;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media(max-width:680px){
+
+  .bookingInfo{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .bookingForm{
+    padding:18px;
+  }
+
+  .modeOption{
+    padding:12px 10px;
+  }
+
+}
+
+/* =========================================
+   LOGO DAYI'S BEAUTY SPA
+   ========================================= */
+
+.brand{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+}
+
+.brand img{
+  width:105px !important;
+  height:auto !important;
+  max-height:70px;
+  object-fit:contain;
+}
+
+/* Celulares */
+@media(max-width:680px){
+  .brand img{
+    width:70px !important;
+    max-height:50px;
+  }
+
+  .navin{
+    height:65px;
+  }
+}
+
+
+/* =====================================================
+   COMBOS - EXPERIENCIAS - TARJETAS DE REGALO
+===================================================== */
+
+.specialOffers {
+  background: #f7f6ef;
+  padding: 80px 0;
+}
+
+.specialBlock {
+  width: min(1100px, 92%);
+  margin: 0 auto 90px;
+}
+
+.specialBlock:last-child {
+  margin-bottom: 0;
+}
+
+.specialBlock .sectionHead {
+  margin-bottom: 35px;
+}
+
+.specialBlock .sectionHead p {
+  max-width: 650px;
+  margin: 12px auto 0;
+  color: #718078;
+  font-size: 13px;
+}
+
+/* TARJETAS */
+
+.offerGrid,
+.experienceOffers,
+.giftGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.offerCard,
+.experienceOffer,
+.giftCard {
+  background: white;
+  border-radius: 22px;
+  padding: 30px 25px;
+  text-align: center;
+  border: 1px solid #e1e5dc;
+  box-shadow: 0 10px 30px rgba(22,61,49,.07);
+  transition: .25s ease;
+}
+
+.offerCard:hover,
+.experienceOffer:hover,
+.giftCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(22,61,49,.12);
+}
+
+.offerTag {
+  display: inline-block;
+  background: #e8c874;
+  color: #173e31;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.offerCard h3,
+.experienceOffer h3,
+.giftCard h3 {
+  font: 600 30px "Cormorant Garamond", serif;
+  color: #075239;
+  margin: 15px 0 10px;
+}
+
+.offerCard p,
+.experienceOffer p,
+.giftCard p {
+  color: #718078;
+  font-size: 12px;
+  line-height: 1.6;
+  min-height: 55px;
+}
+
+.offerCard strong {
+  display: block;
+  color: #075239;
+  font-size: 14px;
+  margin: 18px 0;
+}
+
+.offerBtn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #075239;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 25px;
+  font-size: 11px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.offerBtn:hover {
+  background: #0a6a4d;
+  transform: translateY(-2px);
+}
+
+/* EXPERIENCIAS */
+
+.experienceOffer {
+  background: #eef5ef;
+}
+
+.offerIcon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e8c874;
+  color: #075239;
+  font-size: 24px;
+}
+
+/* TARJETAS */
+
+.giftSection {
+  background: #075239;
+  width: 100%;
+  padding: 55px 5%;
+  border-radius: 28px;
+}
+
+.giftSection .sectionHead h2,
+.giftSection .sectionHead .eyebrow,
+.giftSection .sectionHead p {
+  color: white;
+}
+
+.giftCard h3 {
+  font-size: 38px;
+}
+
+.giftCard.featured {
+  border: 3px solid #e8c874;
+  transform: scale(1.04);
+}
+
+.giftCard.featured > span {
+  display: inline-block;
+  background: #e8c874;
+  color: #173e31;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+/* CELULARES */
+
+@media(max-width:680px) {
+
+  .offerGrid,
+  .experienceOffers,
+  .giftGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .specialOffers {
+    padding: 55px 0;
+  }
+
+  .giftCard.featured {
+    transform: none;
+  }
+
+}
+
+/* =====================================================
+   CONTENIDO DESPLEGABLE DE EXPERIENCIAS
+===================================================== */
+
+.offerContent {
+  display: none;
+  margin-top: 20px;
+  background: white;
+  border-radius: 22px;
+  padding: 30px;
+  border: 1px solid #dfe5dc;
+  box-shadow: 0 10px 30px rgba(22,61,49,.08);
+  animation: offerOpen .3s ease;
+}
+
+.offerContent.open {
+  display: block;
+}
+
+@keyframes offerOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.offerContentHead {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.offerContentHead span {
+  color: #075239;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.offerContentHead h3 {
+  font: 600 34px "Cormorant Garamond", serif;
+  color: #173e31;
+  margin: 8px 0;
+}
+
+.offerContentHead p {
+  color: #718078;
+  font-size: 11px;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.offerItems {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+.offerItem {
+  background: #f5f7f1;
+  border: 1px solid #e0e5dc;
+  border-radius: 17px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offerIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e8c874;
+  color: #075239;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.offerItem h4,
+.giftOption h4 {
+  font: 600 24px "Cormorant Garamond", serif;
+  color: #075239;
+  margin: 5px 0;
+}
+
+.offerItem p,
+.giftOption p {
+  font-size: 10px;
+  line-height: 1.6;
+  color: #718078;
+  margin: 8px 0 16px;
+}
+
+.offerBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #075239;
+  color: white;
+  border-radius: 22px;
+  padding: 10px 18px;
+  font-size: 10px;
+  font-weight: 700;
+  transition: .2s ease;
+  margin-top: auto;
+}
+
+.offerBtn:hover {
+  background: #0a6b4e;
+  transform: translateY(-2px);
+}
+
+
+/* TARJETAS DE REGALO */
+
+.giftOptions {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+  max-width: 760px;
+  margin: auto;
+}
+
+.giftOption {
+  background: #f5f7f1;
+  border: 1px solid #e0e5dc;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+}
+
+.giftOption > span {
+  font-size: 28px;
+}
+
+
+/* BOTONES */
+
+.toggleOffer {
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+
+/* MÓVIL */
+
+@media(max-width:680px) {
+
+  .offerContent {
+    padding: 22px 15px;
+  }
+
+  .offerContentHead h3 {
+    font-size: 29px;
+  }
+
+  .offerItems {
+    grid-template-columns: 1fr;
+  }
+
+  .giftOptions {
+    grid-template-columns: 1fr;
+  }
+
+}
+

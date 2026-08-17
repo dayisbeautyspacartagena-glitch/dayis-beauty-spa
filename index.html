@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Dayi's Beauty Spa | Masajes y Belleza en Cartagena La Boquilla</title>
+
+<meta name="description" content="Dayi's Beauty Spa en La Boquilla, Cartagena. Masajes, faciales, cejas, pestañas, depilación, manos y pies. Reserva por WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topin">
+    <span>◷ Lun–Vie 7:00 a. m.–5:00 p. m. · Sáb–Dom 8:00 a. m.–3:00 p. m. · Almuerzo 12:00–1:00 p. m.</span>
+    <span class="socialmini">◎ TikTok · Instagram · Facebook</span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#inicio"><img src="img/dayis-logo.jpeg" alt="Dayi's Beauty Spa"></a>
+    <button class="menu" aria-label="Abrir menú">☰</button>
+    <nav class="links">
+      <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#experiencias">Experiencias</a>
+      <a href="#galeria">Galería</a><a href="#reserva">Reservas</a><a href="#contacto">Contacto</a>
+      <a class="cta" href="#reserva">Reservar ahora ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <img class="heroImg" src="img/dayis-06.jpeg" alt="Experiencia de spa">
+  <div class="heroShade"></div>
+  <div class="wrap heroContent">
+    <div class="heroCopy">
+      <span class="eyebrow">BELLEZA • BIENESTAR • RELAJACIÓN • ARMONÍA</span>
+      <h1>Tu momento,<br><em>nuestra pasión.</em></h1>
+      <p>Un espacio para desconectarte, consentirte y volver a conectar contigo.</p>
+      <a class="goldBtn" href="#reserva">Reserva tu cita <span>◉</span></a>
+    </div>
+    <div class="heroBadge">“Cuida de ti,<br><em>es tu mejor regalo.</em>”</div>
+  </div>
+</section>
+
+<section class="benefits">
+ <div class="wrap benefitsin">
+  <div><b>♡</b><span>Atención<br>personalizada</span></div>
+  <div><b>✦</b><span>Ambiente<br>relajante</span></div>
+  <div><b>♕</b><span>Productos<br>de calidad</span></div>
+  <div><b>♡</b><span>Resultados<br>que enamoran</span></div>
+ </div>
+</section>
+
+<section id="servicios" class="section services">
+ <div class="wrap">
+  <div class="sectionHead">
+   <span class="leaf">❧</span><span class="eyebrow dark">NUESTROS SERVICIOS</span>
+   <h2>Todo en un solo lugar, <em>para que te sientas increíble.</em></h2>
+  </div>
+  <div class="tabs" role="tablist">
+   <button class="tab active" data-cat="todos">Todos</button>
+   <button class="tab" data-cat="masajes">Masajes</button>
+   <button class="tab" data-cat="faciales">Faciales</button>
+   <button class="tab" data-cat="corporales">Corporales</button>
+   <button class="tab" data-cat="cejas-pestanas">Cejas y Pestañas</button>
+   <button class="tab" data-cat="depilacion">Depilación</button>
+   
+  </div>
+  <div id="serviceGrid" class="serviceGrid"></div>
+ </div>
+</section>
+
+<section id="experiencias" class="section experiences">
+  <div class="wrap">
+
+    <div class="experienceGrid">
+
+      <!-- COMBOS -->
+      <article class="promo promo1">
+        <div>
+          <span>EXPERIENCIAS</span>
+          <h3>Combos<br>Especiales</h3>
+          <p>Más servicios, más bienestar.</p>
+
+          <button
+            type="button"
+            class="smallBtn toggleOffer"
+            data-target="combosContent">
+            Ver combos
+          </button>
+        </div>
+      </article>
+
+      <!-- EXPERIENCIAS -->
+      <article class="promo promo2">
+        <div>
+          <span>AMOR & AMISTAD</span>
+          <h3>Regala una<br>experiencia</h3>
+          <p>Para parejas · amigas · mamá e hija.</p>
+
+          <button
+            type="button"
+            class="smallBtn red toggleOffer"
+            data-target="experienciasContent">
+            Ver experiencias
+          </button>
+        </div>
+      </article>
+
+      <!-- TARJETAS -->
+      <article class="promo promo3">
+        <div>
+          <span>DETALLES ESPECIALES</span>
+          <h3>Tarjetas<br>de Regalo</h3>
+          <p>El mejor detalle para alguien especial.</p>
+
+          <button
+            type="button"
+            class="smallBtn toggleOffer"
+            data-target="regalosContent">
+            Consultar tarjetas
+          </button>
+        </div>
+      </article>
+
+    </div>
+
+
+    <!-- =================================================
+         CONTENIDO DE COMBOS
+    ================================================== -->
+
+    <div id="combosContent" class="offerContent">
+
+      <div class="offerContentHead">
+        <span>✦ COMBOS ESPECIALES</span>
+        <h3>Elige tu momento de bienestar</h3>
+        <p>
+          Descubre nuestras opciones y escríbenos para conocer
+          disponibilidad y precios.
+        </p>
+      </div>
+
+      <div class="offerItems">
+
+        <article class="offerItem">
+          <div class="offerIcon">♡</div>
+          <div>
+            <h4>Combo Relax</h4>
+            <p>
+              Una combinación pensada para desconectarte,
+              relajarte y disfrutar de un momento para ti.
+            </p>
+          </div>
+
+          <a
+            class="offerBtn"
+            target="_blank"
+            href="https://wa.me/573244022228?text=Hola%20Dayi's%20Beauty%20Spa%20%F0%9F%8C%BF.%20Me%20gustar%C3%ADa%20conocer%20los%20detalles%20y%20precio%20del%20Combo%20Relax.">
+            Consultar
+          </a>
+        </article>
+
+
+        <article class="offerItem">
+          <div class="offerIcon">✦</div>
+          <div>
+            <h4>Combo Spa</h4>
+            <p>
+              Una experiencia completa de cuidado y relajación
+              para consentirte de principio a fin.
+            </p>
+          </div>
+
+          <a
+            class="offerBtn"
+            target="_blank"
+            href="https://wa.me/573244022228?text=Hola%20Dayi's%20Beauty%20Spa%20%F0%9F%8C%BF.%20Me%20gustar%C3%ADa%20conocer%20los%20detalles%20y%20precio%20del%20Combo%20Spa.">
+            Consultar
+          </a>
+        </article>
+
+
+        <article class="offerItem">
+          <div class="offerIcon">♥</div>
+          <div>
+            <h4>Combo Beauty</h4>
+            <p>
+              Una combinación especial para realzar tu belleza
+              y disfrutar de una experiencia diferente.
+            </p>
+          </div>
+
+          <a
+            class="offerBtn"
+            target="_blank"
+            href="https://wa.me/573244022228?text=Hola%20Dayi's%20Beauty%20Spa%20%F0%9F%8C%BF.%20Me%20gustar%C3%ADa%20conocer%20los%20detalles%20y%20precio%20del%20Combo%20Beauty.">
+            Consultar
+          </a>
+        </article>
+
+      </div>
+    </div>
+
+
+    <!-- =================================================
+         CONTENIDO DE EXPERIENCIAS
+    ================================================== -->
+
+    <div id="experienciasContent" class="offerContent">
+
+      <div class="offerContentHead">
+        <span>♡ REGALA UNA EXPERIENCIA</span>
+        <h3>Un detalle que se recuerda</h3>
+        <p>
+          El regalo perfecto para alguien especial.
+          Consulta nuestras opciones y precios por WhatsApp.
+        </p>
+      </div>
+
+      <div class="offerItems">
+
+        <article class="offerItem">
+          <div class="offerIcon">♡</div>
+
+          <div>
+            <h4>Para Parejas</h4>
+            <p>
+              Una experiencia para compartir juntos,
+              relajarse y disfrutar de un momento especial.
+            </p>
+          </div>
+
+          <a
+            class="offerBtn"
+            target="_blank"
+            href="https://wa.me/573244022228?text=Hola%20Dayi's%20Beauty%20Spa%20%F0%9F%8C%BF.%20Me%20gustar%C3%ADa%20conocer%20las%20experiencias%20para%20parejas%20y%20sus%20precios.">
+            Consultar
+          </a>
+        </article>
+
+
+        <article class="offerItem">
+          <div class="offerIcon">✦</div>
+
+          <div>
+            <h4>Mamá e Hija</h4>
+            <p>
+              Un momento especial para compartir,
+              consentirse y crear recuerdos juntas.
+            </p>
+          </div>
+
+          <a
+            class="offerBtn"
+            target="_blank"
+            href="https://wa.me/573244022228?text=Hola%20Dayi's%20Beauty%20Spa%20%F0%9F%8C%BF.%20Me%20gustar%C3%ADa%20conocer%20las%20experiencias%20para%20mam%C3%A1%20e%20hija%20y%20sus%20precios.">
+            Consultar
+          </a>
+        </article>
+
+
+        <article class="offerItem">
+          <div class="offerIcon">♥</div>
+
+          <div>
+            <h4>Para una Amiga</h4>
+            <p>
+              El detalle perfecto para sorprender a esa
+              amiga especial con una experiencia de bienestar.
+            </p>
+          </div>
+
+          <a
+            class="offerBtn"
+            target="_blank"
+            href="https://wa.me/573244022228?text=Hola%20Dayi's%20Beauty%20Spa%20%F0%9F%8C%BF.%20Me%20gustar%C3%ADa%20conocer%20las%20experiencias%20para%20una%20amiga%20y%20sus%20precios.">
+            Consultar
+          </a>
+        </article>
+
+      </div>
+    </div>
+
+
+    <!-- =================================================
+         CONTENIDO DE TARJETAS DE REGALO
+    ================================================== -->
+
+    <div id="regalosContent" class="offerContent">
+
+      <div class="offerContentHead">
+        <span>♕ TARJETAS DE REGALO</span>
+        <h3>Regala bienestar, regala Dayi's</h3>
+        <p>
+          Consulta los valores disponibles y encuentra
+          el detalle perfecto para alguien especial.
+        </p>
+      </div>
+
+      <div class="giftOptions">
+
+        <div class="giftOption">
+          <span>🎁</span>
+          <h4>Tarjeta de Regalo</h4>
+          <p>
+            Diferentes valores disponibles.
+          </p>
+
+          <a
+            class="offerBtn"
+            target="_blank"
+            href="https://wa.me/573244022228?text=Hola%20Dayi's%20Beauty%20Spa%20%F0%9F%8C%BF.%20Me%20gustar%C3%ADa%20conocer%20los%20valores%20disponibles%20de%20las%20tarjetas%20de%20regalo.">
+            Consultar valores
+          </a>
+        </div>
+
+        <div class="giftOption">
+          <span>♥</span>
+          <h4>Regalo Personalizado</h4>
+          <p>
+            Cuéntanos para quién es y te ayudamos
+            a elegir la mejor opción.
+          </p>
+
+          <a
+            class="offerBtn"
+            target="_blank"
+            href="https://wa.me/573244022228?text=Hola%20Dayi's%20Beauty%20Spa%20%F0%9F%8C%BF.%20Quiero%20personalizar%20una%20tarjeta%20de%20regalo.">
+            Personalizar
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="reserva" class="bookingSection">
+  <div class="wrap">
+
+    <div class="bookingTitle">
+      <span>🌿</span>
+      <div>
+        <h2>Reserva tu Cita</h2>
+        <p>Elige tu servicio, fecha y modalidad.</p>
+      </div>
+    </div>
+
+    <div class="bookingBox">
+
+      <div class="steps">
+        <div class="step active">
+          <b>1</b>
+          <span>Servicio</span>
+        </div>
+
+        <div class="step">
+          <b>2</b>
+          <span>Fecha</span>
+        </div>
+
+        <div class="step">
+          <b>3</b>
+          <span>Hora</span>
+        </div>
+
+        <div class="step">
+          <b>4</b>
+          <span>Tus datos</span>
+        </div>
+
+        <div class="step">
+          <b>5</b>
+          <span>Confirmar</span>
+        </div>
+      </div>
+
+
+      <form id="bookingForm" class="bookingForm">
+
+        <!-- COLUMNA 1 -->
+        <div class="bookingCol">
+
+          <label>
+            Servicio
+
+            <select id="bookingService" required>
+              <option value="">Selecciona un servicio</option>
+            </select>
+          </label>
+
+
+          <div class="bookingInfo">
+            <div>
+              <span>💰 Precio</span>
+              <strong id="bookingPrice">$0</strong>
+            </div>
+
+            <div>
+              <span>⏱️ Duración</span>
+              <strong id="bookingDuration">—</strong>
+            </div>
+          </div>
+
+
+          <label>
+            Fecha
+
+            <input
+              id="bookingDate"
+              type="date"
+              required
+            >
+          </label>
+
+        </div>
+
+
+        <!-- COLUMNA 2 -->
+        <div class="bookingCol">
+
+          <label>
+            Horas disponibles
+
+            <select id="bookingTime" required>
+              <option value="">
+                Selecciona fecha y servicio
+              </option>
+            </select>
+          </label>
+
+
+          <div class="scheduleNote">
+            🟢 Las horas mostradas permiten terminar el servicio antes del cierre y no cruzan el horario de almuerzo.
+          </div>
+
+          <div class="scheduleMini">
+            Lun–Vie 7:00–17:00 ·
+            Sáb–Dom 8:00–15:00 ·
+            Almuerzo 12:00–13:00
+          </div>
+
+
+          <!-- MODALIDAD -->
+          <div class="bookingMode">
+
+            <span class="modeTitle">
+              📍 ¿Dónde deseas recibir el servicio?
+            </span>
+
+            <label class="modeOption">
+              <input
+                type="radio"
+                name="bookingMode"
+                value="spa"
+                checked
+              >
+              <span>
+                <strong>En Dayi's Beauty Spa</strong>
+                <small>La Boquilla, KR 13</small>
+              </span>
+            </label>
+
+
+            <label class="modeOption">
+              <input
+                type="radio"
+                name="bookingMode"
+                value="domicilio"
+              >
+
+              <span>
+                <strong>Servicio a domicilio</strong>
+                <small>Recibimos tu dirección por WhatsApp</small>
+              </span>
+            </label>
+
+          </div>
+
+
+          <!-- DIRECCIÓN DOMICILIO -->
+          <div
+            id="domicilioBox"
+            class="domicilioBox"
+            style="display:none;"
+          >
+
+            <label>
+              Dirección del domicilio
+
+              <input
+                id="bookingAddress"
+                type="text"
+                placeholder="Ej: Calle 1 # 2-30, apartamento 201"
+              >
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <!-- COLUMNA 3 -->
+        <div class="bookingCol">
+
+          <label>
+            Tu nombre
+
+            <input
+              id="bookingName"
+              type="text"
+              placeholder="Tu nombre completo"
+              required
+            >
+          </label>
+
+
+          <label>
+            Tu número de WhatsApp
+
+            <input
+              id="bookingPhone"
+              type="tel"
+              placeholder="300 000 0000"
+            >
+          </label>
+
+
+          <label>
+            Nota <span>(opcional)</span>
+
+            <textarea
+              id="bookingNote"
+              rows="3"
+              placeholder="¿Es para un regalo? ¿Alguna preferencia?"
+            ></textarea>
+          </label>
+
+
+          <div id="formError" class="formError"></div>
+
+
+          <button
+            class="waBtn"
+            type="submit"
+          >
+            ◉ Continuar por WhatsApp
+          </button>
+
+
+          <small>
+            Tu solicitud será enviada por WhatsApp para confirmar disponibilidad.
+          </small>
+
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+ <div class="wrap contactGrid">
+  <div><span class="eyebrow dark">HORARIOS DE ATENCIÓN</span><h3>Estamos aquí para ti.</h3>
+   <p>◷ <b>Lunes a viernes:</b> 7:00 a. m. – 5:00 p. m.</p>
+   <p>◷ <b>Sábados y domingos:</b> 8:00 a. m. – 3:00 p. m.</p>
+   <p>◷ <b>Almuerzo:</b> todos los días 12:00 p. m. – 1:00 p. m.</p>
+  </div>
+  <div><span class="eyebrow dark">UBICACIÓN</span><h3>La Boquilla, KR 13</h3><p>Cartagena, Colombia</p>
+   <a class="mapBtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=La+Boquilla+KR+13+Cartagena+Colombia">Ver en Google Maps ↗</a>
+  </div>
+  <div><span class="eyebrow dark">SÍGUENOS</span><h3>@dayis_beauty_spa</h3><p>Instagram · TikTok · Facebook</p><a class="waText" href="https://wa.me/573244022228" target="_blank" rel="noopener">WhatsApp +57 324 402 2228</a></div>
+ </div>
+</section>
+
+<section id="galeria" class="section gallery">
+ <div class="wrap">
+  <div class="sectionHead"><span class="leaf">❧</span><span class="eyebrow dark">GALERÍA</span><h2>Resultados que <em>hablan por sí solos.</em></h2></div>
+  <div class="galleryGrid">
+   <img src="img/dayis-galeria-01.jpg" alt="Trabajo de belleza de Dayi's">
+   <img src="img/dayis-galeria-02.jpg" alt="Cuidado personal de Dayi's">
+   <img src="img/dayis-galeria-03.jpg" alt="Resultado de belleza de Dayi's">
+   <img src="img/dayis-06.jpeg" alt="Masaje corporal Dayi's">
+   <img src="img/dayis-02.jpeg" alt="Limpieza facial Dayi's">
+   <img src="img/dayis-04.jpeg" alt="Pestañas Dayi's">
+   <img src="img/dayis-05.jpeg" alt="Masaje corporal Dayi's">
+   <img src="img/dayis-01.jpeg" alt="Limpieza facial Dayi's">
+   <img src="img/dayis-03.jpeg" alt="Pestañas Dayi's">
+   <img src="img/dayis-07.jpeg" alt="Pestañas Dayi's">
+  </div>
+ </div>
+</section>
+
+<section id="video" class="section videoSection">
+ <div class="wrap videoGrid">
+  <div>
+   <span class="eyebrow dark">CONOCE NUESTRO TRABAJO</span>
+   <h2>Una experiencia que se <em>siente.</em></h2>
+   <p>Descubre parte de la experiencia de bienestar y cuidado de Dayi's. Este video es material real y puede actualizarse cuando quieras.</p>
+   <a class="mapBtn" href="#reserva">Quiero reservar ↗</a>
+  </div>
+  <div class="videoCard">
+   <video controls playsinline preload="metadata" poster="img/dayis-video-poster.jpg">
+    <source src="img/dayis-video-01.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+   </video>
+  </div>
+  <div class="videoCard">
+   <video controls playsinline preload="metadata" poster="img/dayis-video-poster2.jpg">
+    <source src="img/dayis-video-02.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+   </video>
+  </div>
+  <div class="videoCard">
+   <video controls playsinline preload="metadata" poster="img/dayis-video-poster1.jpg">
+    <source src="img/dayis-video-03.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+   </video>
+  </div>
+ </div>
+</section>
+
+<section class="testimonials section">
+ <div class="wrap">
+  <div class="sectionHead"><span class="leaf">♥</span><span class="eyebrow dark">TESTIMONIOS</span><h2>Lo que dicen <em>nuestras clientas.</em></h2></div>
+  <div class="testimonialGrid">
+   <article><div class="avatar">MC</div><b>María Camila</b><span>★★★★★</span><p>“Amo este lugar, la atención es increíble y los resultados siempre superan mis expectativas.”</p></article>
+   <article><div class="avatar">D</div><b>Daniela</b><span>★★★★★</span><p>“Me encantaron mis pestañas, quedaron hermosas y súper naturales.”</p></article>
+   <article><div class="avatar">V</div><b>Valentina</b><span>★★★★★</span><p>“El masaje fue espectacular, salí renovada. 100% recomendado.”</p></article>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+
+    <img src="img/dayis-logo.jpeg" alt="Dayi's Beauty Spa">
+
+    <div>
+      <b>Tu bienestar,<br>
+      nuestra especialidad. 💚</b>
+    </div>
+
+    <div>
+      <b>Síguenos en Instagram</b><br>
+
+      <a href="https://www.instagram.com/dayi_makeup09/"
+         target="_blank"
+         rel="noopener noreferrer">
+        @dayi_makeup09
+      </a><br>
+
+      <a href="https://www.instagram.com/dayiicasseres/"
+         target="_blank"
+         rel="noopener noreferrer">
+        @dayiicasseres
+      </a><br>
+
+      <a href="https://www.instagram.com/dayis8129/"
+         target="_blank"
+         rel="noopener noreferrer">
+        @dayis8129
+      </a>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Dayi's Beauty Spa · La Boquilla, KR 13, Cartagena · Todos los derechos reservados.
+  </div>
+</footer>
+<a class="floatingWa" href="https://wa.me/573244022228" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a>
+<script src="js/app.js"></script>
+</body>
+</html>
