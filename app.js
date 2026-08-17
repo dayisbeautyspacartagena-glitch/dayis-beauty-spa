@@ -296,23 +296,35 @@ function renderServices(category = "todos") {
 
   grid.innerHTML = "";
 
+  // Normalizar texto para evitar problemas con
+  // tildes, mayúsculas y espacios
+  const normalizeCategory = text => {
+    return text
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/\s+/g, "-");
+  };
+
+  const selectedCategory = normalizeCategory(category);
+
   const filtered = services.filter(service => {
 
-    if (category === "todos") return true;
+    if (selectedCategory === "todos") {
+      return true;
+    }
 
-    return service.category
-      .toLowerCase()
-      .replaceAll(" ", "-")
-      .replaceAll("í", "i")
-      .replaceAll("á", "a")
-      .includes(category);
+    const serviceCategory =
+      normalizeCategory(service.category);
 
+    return serviceCategory === selectedCategory;
   });
 
 
   filtered.forEach(service => {
 
-    const card = document.createElement("article");
+    const card =
+      document.createElement("article");
 
     card.className = "serviceCard";
 
@@ -354,28 +366,32 @@ function renderServices(category = "todos") {
   });
 
 
-  document.querySelectorAll(".reserveCard").forEach(button => {
+  // Botones de reservar
+  document
+    .querySelectorAll(".reserveCard")
+    .forEach(button => {
 
-    button.addEventListener("click", () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-      byId("bookingService").value =
-        button.dataset.service;
+          byId("bookingService").value =
+            button.dataset.service;
 
-      updateBooking();
+          updateBooking();
 
-      document
-        .querySelector("#reserva")
-        .scrollIntoView({
-          behavior: "smooth"
-        });
+          document
+            .querySelector("#reserva")
+            .scrollIntoView({
+              behavior: "smooth"
+            });
+
+        }
+      );
 
     });
 
-  });
-
 }
-
-
 // ========================================
 // LLENAR SELECT DE SERVICIOS
 // ========================================
